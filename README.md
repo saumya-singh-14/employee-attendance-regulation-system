@@ -1,21 +1,19 @@
-# employee-attendance-regulation-system
-This project is a robust facial recognition module designed and developed to accurately identify employees based on their facial features. Integrated with a user-friendly attendance management application, this system allows employees to check in and out with a simple face scan
+# FaceLog – Real-Time Face Recognition Attendance System
+FaceLog is a lightweight, offline-capable attendance management system that automatically detects and recognizes employee faces through a webcam and records daily attendance.
+Built with Python, OpenCV (using Haar Cascade & LBPH algorithms) and MySQL, it prevents duplicate entries and offers an intuitive Tkinter-based GUI.
 
-# Key Features:
-Real-time Face Detection
-Home Page
-Student Management System: Save, Take Photo Samples, Update, Delete, Reset
-Train Photo Samples
-Take Attendance with Face Detection
-Attendance Report: Export to Excel file & MySQL database
-Developer Page
-Help Desk
-Exit System
+# Key Features
+Real-time face detection using Haar Cascade
+Face recognition with LBPH (Local Binary Pattern Histogram)
+Attendance logging into MySQL and CSV files
+Prevents duplicate daily entries
+Tkinter-based GUI for adding employees and viewing logs
+Works offline, lightweight and doesn’t need GPU or deep learning
 
-# Technologies Used:
-Python, Tkinter GUI, OpenCV
-Haarcascade (Object Detection)
-LBPH (Face Recognition)
-MySQL Database
-
-This project is ideal for managing attendance in educational institutions, ensuring accurate and efficient record-keeping.
+# Technologies & Libraries Used
+Face detection - OpenCV Haar Cascade	(Fast, CPU-friendly; avoids GPU-heavy deep models)
+Face recognition - OpenCV LBPH	(Works with small datasets; robust without deep learning)
+GUI - Tkinter	(Lightweight and built-in; avoids heavier PyQt)
+Database - MySQL + mysql-connector	(Relational and scalable; better than SQLite for multi-user)
+CSV logs - CSV module	(Easy human-readable backup)
+Image handling - Pillow, OpenCV	(For capturing and displaying images)
