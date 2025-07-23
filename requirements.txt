@@ -1,0 +1,9 @@
+opencv-python
+numpy
+Pillow
+mysql-connector-python
+
+Install with:
+pip install -r requirements.txt
+(Optional: add tkinter — but usually comes preinstalled with Python)
+
